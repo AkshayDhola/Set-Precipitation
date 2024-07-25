@@ -1,0 +1,49 @@
+{
+    "name": "setup-rain",
+    "displayName": "Config WebDev",
+    "description": "An extension which provides basic backend files.",
+    "publisher": "AkshayDhola",
+    "version": "0.0.7",
+    "engines": {
+        "vscode": "^1.90.0"
+    },
+    "icon": "icon.jpg",
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [{
+                "command": "extension.setRain",
+                "title": "config backend files"
+            },
+            {
+                "command": "extension.setMERN",
+                "title": "config mern files"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AkshayDhola/Set-Precipitation"
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^10.0.6",
+        "@types/node": "18.x",
+        "@types/vscode": "^1.90.0",
+        "@vscode/test-cli": "^0.0.9",
+        "@vscode/test-electron": "^2.4.0",
+        "eslint": "^8.57.0",
+        "typescript": "^5.4.5"
+    },
+    "dependencies": {
+        "@vscode/vsce": "^2.29.0",
+        "vsce": "^2.15.0"
+    }
+}
